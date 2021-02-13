@@ -23,7 +23,7 @@ class Message extends Component{
     return (
         <div>
                 <h3>Value is  {this.state.value}</h3>
-    <button color="red" onClick={this.increaseValue}>Increase by {this.state.bvalue}</button>
+    <button color="red" onClick={this.increaseValue}>Increase value by {this.state.bvalue}</button>
         </div>
     )
     }
