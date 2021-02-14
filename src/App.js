@@ -5,6 +5,7 @@ import Welcome from './components/Welcome'
 import Message from './components/Message'
 import Counter from './components/Counter'
 import Test from './components/Test'
+import ParentComponent from './components/ParentComponent'
 
 function App() {
   return (
@@ -13,8 +14,7 @@ function App() {
       <Welcome name = "niraj pandey"/>
       <Message />
       */}
-      <Counter />
-      <Test />
+      <ParentComponent />
     </div>
   );
 }
