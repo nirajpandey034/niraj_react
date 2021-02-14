@@ -4,7 +4,6 @@ class ChildComponent extends Component {
     render() {
         return (
             <div>
-
                 <button onClick={()=>this.props.changeName("niraj")}>Change text</button>
             </div>
         )
