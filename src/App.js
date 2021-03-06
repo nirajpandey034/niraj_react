@@ -7,6 +7,7 @@ import Counter from './components/Counter'
 import Test from './components/Test'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
+import PersonList from './components/PersonList'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Welcome name = "niraj pandey"/>
       <Message />
       */}
-      <UserGreeting />
+      <PersonList />
     </div>
   );
 }
