@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Fetching from './Fetching'
 
-export class Fetch extends Component {
+class Fetch extends Component {
         constructor(props){
                 super(props)
                 this.state = {
