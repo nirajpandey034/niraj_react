@@ -45,7 +45,8 @@ class EndpointTest extends Component {
             phone : this.state.phone,
             name : this.state.name,
             address : this.state.address,
-            pin : this.state.pin
+            pin : this.state.pin,
+            myself : ''
         })
         .then((response)=>{
             console.log(response)
@@ -56,8 +57,15 @@ class EndpointTest extends Component {
 
         event.preventDefault()
     }
+    componentDidMount(){
+        this.setState({
+            myself : 'Niraj Kumar Pandey'
+        })
+    }
     render() {
         return (
+            <div>
+            <h1>Hello {this.state.myself}</h1>
             <form onSubmit={this.submitHandler}>
                 <div>
                     <label>Name: </label>
@@ -81,6 +89,7 @@ class EndpointTest extends Component {
 
                 <button type="submit">Create User</button>
             </form>
+            </div>
         )
     }
 }
