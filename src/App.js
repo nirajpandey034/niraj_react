@@ -8,7 +8,7 @@ import Test from './components/Test'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import PersonList from './components/PersonList'
-import Form from './components/Form'
+import EndpointTest from './components/EndpointTest'
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
       <Message />
       */}
       {/* <PersonList /> */}
-      <Form />
+      <EndpointTest />
     </div>
   );
 }
