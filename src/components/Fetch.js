@@ -14,9 +14,9 @@ export class Fetch extends Component {
             .then(
                 (result)=>{
                     //result = JSON.parse(result)
-                    //let Result = result.data.map(results =><h2 key = {this.state.data}>{results.data}</h2>)
+                    let Result = result.data.map(results =><h2 key = {++x} results = {results.data} />)
                     this.setState({
-                        data : result
+                        data : Result
                     })
                 }
             )
