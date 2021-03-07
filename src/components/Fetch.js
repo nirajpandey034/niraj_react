@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Fetching from './Fetching'
 
 export class Fetch extends Component {
         constructor(props){
@@ -13,10 +14,9 @@ export class Fetch extends Component {
             .then(res=>res.json())
             .then(
                 (result)=>{
-                    //result = JSON.parse(result)
-                    let Result = result.data.map(results =><h2 key = {++x} results = {results.data} />)
+                    let Results =  result.data.map(results => <Fetching key={results.id} data={results}/>)
                     this.setState({
-                        data : Result
+                        data : Results
                     })
                 }
             )

@@ -20,7 +20,7 @@ function PersonList() {
         }
     ]
     //map function takes each element and applies the same method to all of them, like here calling the Person.js and returns an array
-    let persons  = Persons.map(person => <Person person = {person} />)
+    let persons  = Persons.map(person => <Person key ={person.id} person = {person} />)
     return (
         <div>
             {persons}
