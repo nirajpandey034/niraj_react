@@ -8,8 +8,7 @@ import Test from './components/Test'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import PersonList from './components/PersonList'
-import Fetch from './components/Fetch';
-//import Fetch from './components/Fetch'
+import Fetch from './components/Fetch'
 
 function App() {
   return (
