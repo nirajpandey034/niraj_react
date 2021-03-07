@@ -14,7 +14,7 @@ export class Fetch extends Component {
             .then(res=>res.json())
             .then(
                 (result)=>{
-                    let Results =  result.data.map(results => <Fetching key={results.id} data={results}/>)
+                    let Results =  result.data.map((results,index) => <Fetching key={index} data={results}/>)
                     this.setState({
                         data : Results
                     })
